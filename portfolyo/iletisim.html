@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Mooli&family=Poppins&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="lightbox.css">
+
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/pin.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/phone.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/mail.css' rel='stylesheet'>
+
+    <title>yaren veyisoğlu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'AR One Sans', sans-serif;
+            font-family: 'Mooli', sans-serif;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        body {
+            min-height: 107vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #F1EAFF;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 100px;
+            background: #bc87eb;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+
+        }
+
+        .logo {
+            font-size: 32px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .navbar a {
+            position: relative;
+            font-size: 18px;
+            color: #fff;
+            font-weight: 500;
+            text-decoration: none;
+            margin-left: 30px;
+        }
+
+        .navbar a::before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background-color: #fff;
+            height: 2px;
+        }
+
+        .navbar a:hover::before {
+            width: 100%;
+            transition: .3s;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 65%;
+            background-color: #fff;
+            padding: 20px 30px 60px 40px;
+            border-radius: 5px;
+            box-shadow: 10px 10px 10px 10px #80619b7c;
+            transition-duration: .4s;
+
+
+        }
+
+        .container:hover {
+            width: 65%;
+            background-color: #fff;
+            padding: 20px 30px 60px 40px;
+            border-radius: 5px;
+            box-shadow: 10px 10px 10px 10px #80619ba9;
+            cursor: pointer;
+            transition-duration: .4s;
+
+        }
+
+        .container .content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .container .content .left-side {
+            width: 25%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 15px;
+            position: relative;
+
+        }
+
+        .content .left-side::before {
+            content: '';
+            position: absolute;
+            height: 70%;
+            width: 2px;
+            right: -15px;
+            top: 50%;
+            transform: translate(-50%);
+        }
+
+        .content .left-side .details i {
+            font-size: 30px;
+            color: #bc87eb;
+            margin: bottom 10px;
+        }
+        .content .left-side .details .topic{
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .content .left-side .details .text{
+            font-size: 14px;
+            color: rgba(151, 151, 151, 0.781);
+        }
+        .content .right-side{
+            width: 75%;
+            margin-left: 75px;
+        }
+        .right-side .topic-text{
+            font-size: 23px;
+            font-weight: 600;
+            color: #bc87eb;
+        }
+        .right-side .input-box{
+            height: 50px;
+            width: 100%;
+            margin: 12px 0;
+        }
+        .input-box input,
+        .input-box textarea{
+            height: 100%;
+            width: 100%;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            background-color: #F1EAFF;
+            border-radius: 5px;
+            padding: 0 15px;
+            resize: none;
+        }
+        .message-box{
+            min-height: 110px;
+        }
+        .input-box textarea{
+            padding-top: 6px;
+
+        }
+        .right-side .button{
+            display: inline-block;
+            margin-top: 12px;
+
+        }
+        .button input{
+            color: #fff;
+            font-size: 18px;
+            outline: none;
+            border: none;
+            padding: 8px 17px;
+            border-radius: 5px;
+            background-color: #bc87eb;
+            cursor: pointer;
+            transition: all .3s ease;
+
+        }
+        .button input:hover{
+            background-color: #8962aa;
+        
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <a class="logo" href="#">Yaren Veyisoğlu</a>
+        <nav class="navbar">
+            <a href="index.html">Anasayfa</a>
+            <a href="urunler.html">Ürünlerim</a>
+            <a href="iletisim.html">İletişim</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="content">
+            <div class="left-side">
+                <div class="details">
+                    <div class="address-details">
+                        <i class="gg-pin"></i>
+                        <div class="topic">Adres</div>
+                        <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,<br>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, vitae!
+                         </div>
+                        <div class="text">Kütahya Merkez</div>
+                    </div>
+                    <div class="phone-details">
+                        <i class="gg-phone"></i>
+                        <div class="topic">Tel no</div>
+                        <div class="text">05430004343</div>
+                    </div>
+                    <div class="mail">
+                        <i class="gg-mail"></i>
+                        <div class="topic"> Mail Adres</div>
+                        <div class="text">semihgms65@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="topic-text">
+                    Bize Mesaj Gönderin
+                </div>
+                <form action="#">
+                    <div class="input-box">
+                        <input type="text" placeholder="adınızı giriniz">
+
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="mail adresinizi giriniz">
+                        
+                    </div>
+                    <div class="input-box message-box">
+                        <textarea rows="5" placeholder="mesajınız"></textarea>
+                    </div>
+                    <div class="button">
+                        <input type="button" value="Gönder">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="lightbox-plus-jquery.js"> </script>
+</body>
+
+</html>

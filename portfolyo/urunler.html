@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Mooli&family=Poppins&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="lightbox.css">
+
+
+    <title>yaren veyisoğlu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'AR One Sans', sans-serif;
+            font-family: 'Mooli', sans-serif;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        body {
+            min-height: 107vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #F1EAFF;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 100px;
+            background: #bc87eb;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+
+        }
+
+        .logo {
+            font-size: 32px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .navbar a {
+            position: relative;
+            font-size: 18px;
+            color: #fff;
+            font-weight: 500;
+            text-decoration: none;
+            margin-left: 30px;
+        }
+
+        .navbar a::before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background-color: #fff;
+            height: 2px;
+        }
+
+        .navbar a:hover::before {
+            width: 100%;
+            transition: .3s;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .products{
+            background-color: #fff;
+            margin: 125px;
+            padding-bottom: 125px;
+            box-shadow: 10px 10px 10px 10px #80619b7c;
+            transition-duration: .4s;
+        }
+        .products:hover{
+            background-color: #fff;
+            margin: 125px;
+            padding-bottom: 125px;
+            box-shadow: 10px 10px 10px 10px #80619ba9;
+            cursor: pointer;
+        }
+
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 100px 8%;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 30px;
+        }
+
+        .gallery img {
+            width: 100%;
+
+        }
+        .text{
+            text-align: center;
+            color:#bc87eb;
+            margin-top: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <a class="logo" href="#">Yaren Veyisoğlu</a>
+        <nav class="navbar">
+            <a href="index.html">Anasayfa</a>
+            <a href="urunler.html">Ürünlerim</a>
+            <a href="iletisim.html">İletişim</a>
+        </nav>
+    </header>
+    <div class="products">
+        <h1 class="text">Ürünlerim</h1>
+
+
+        <div class="container">
+
+            <div class="gallery">
+                <a href="yaren1.jpg" data-lightbox="models" data-title="caption1">
+                    <img src="yaren1.jpg">
+                </a>
+                <a href="yaren2.jpg" data-lightbox="models" data-title="caption1">
+                    <img src="yaren2.jpg">
+                </a>
+                <a href="yaren3.jpg" data-lightbox="models" data-title="caption1">
+                    <img src="yaren3.jpg">
+                </a>
+                <a href="yaren4.jpg" data-lightbox="models" data-title="caption1">
+                    <img src="yaren4.jpg">
+                </a>
+                <a href="yaren5.jpg" data-lightbox="models" data-title="caption1">
+                    <img src="yaren5.jpg">
+                </a>
+                <a href="yaren6.jpg" data-lightbox="models" data-title="caption1">
+                    <img src="yaren6.jpg">
+                </a>
+                <a href="yaren7.jpg" data-lightbox="models" data-title="caption1">
+                    <img src="yaren7.jpg">
+                </a>
+                <a href="yaren8.jpg" data-lightbox="models" data-title="caption1">
+                    <img src="yaren8.jpg">
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <script src="lightbox-plus-jquery.js"> </script>
+</body>
+
+</html>

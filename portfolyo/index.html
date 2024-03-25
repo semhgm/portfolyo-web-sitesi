@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Mooli&family=Poppins&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="lightbox.css">
+
+    <title>yaren veyisoğlu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'AR One Sans', sans-serif;
+            font-family: 'Mooli', sans-serif;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        body {
+            min-height: 107vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #F1EAFF;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 100px;
+            background: #bc87eb;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+
+        }
+
+        .logo {
+            font-size: 32px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .navbar a {
+            position: relative;
+            font-size: 18px;
+            color: #fff;
+            font-weight: 500;
+            text-decoration: none;
+            margin-left: 30px;
+        }
+
+        .navbar a::before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background-color: #fff;
+            height: 2px;
+        }
+
+        .navbar a:hover::before {
+            width: 100%;
+            transition: .3s;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+
+        .about-section {
+            background: url(yaren.jpg) no-repeat left;
+            margin-top: 100px;
+            background-size: 30%;
+            background-color: #fdfdfd;
+            overflow: hidden;
+            padding: 100px 0;
+            box-shadow: 10px 10px 10px 10px #80619b7c;
+            transition-duration: .4s;
+
+        }
+
+        .about-section:hover {
+            background: url(yaren.jpg) no-repeat left;
+            margin-top: 68px;
+            background-size: 35%;
+            background-color: #fdfdfd;
+            overflow: hidden;
+            padding: 100px 0;
+            box-shadow: 10px 10px 10px 10px #80619ba9;
+            cursor: pointer;
+
+            transition-duration: .4s;
+        }
+
+        .inner-container {
+            width: 55%;
+            float: right;
+            background-color: #c89bf0;
+            padding: 150px;
+            border-radius: 5px;
+            box-shadow: 7px 7px 7px 5px rgba(128, 97, 155, 0.76);
+            transition-duration: .4s;
+
+        }
+
+        .inner-container:hover {
+            cursor: pointer;
+            width: 55%;
+            float: right;
+            background-color: #c89bf0;
+            padding: 150px;
+            border-radius: 5px;
+            box-shadow: 7px 7px 7px 5px rgba(87, 65, 107, 0.616);
+
+        }
+
+
+
+        .inner-container h1 {
+            margin-bottom: 30px;
+            font-size: 30px;
+            font-weight: 900;
+            color: #fff;
+        }
+
+        .text {
+            font-size: 13px;
+            color: #fff;
+            line-height: 30px;
+            text-align: justify;
+            margin-bottom: 40px;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 700;
+            font-size: 13px;
+            color: #fff;
+        }
+
+        @media screen and (max-width:1200px) {
+            .inner-container {
+                padding: 80px;
+            }
+        }
+
+        @media screen and (max-width:1000px) {
+            .about-section {
+                background-size: 100%;
+                padding: 100px 40px;
+            }
+
+            .inner-container {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .about-section {
+                padding: 0;
+            }
+
+            .inner-container {
+                padding: 60px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <a class="logo" href="#">semih</a>
+        <nav class="navbar">
+            <a href="index.htmls">Anasayfa</a>
+            <a href="urunler.html">Ürünlerim</a>
+            <a href="iletisim.html">İletişim</a>
+        </nav>
+    </header>
+    <div class="about-section">
+        <div></div>
+        <div class="inner-container">
+            <h1>Hakkımda</h1>
+            <p class="text">
+                Merhaba ben Yaren. Küçüklüğümden gelen merak duygusu,hayal gücü ve yeni bir şeyler tasarlama isteğiyle
+                şu an Dumlupınar Üniversitesi Görsel İletişim Tasarımı bölümü öğrencisiyim.Okulumuzun bize sağladığı
+                bazı programlar Photoshop, İllustratör vb. gibi programları kullanmamız kendimi geliştirmemde ve ufak
+                ufak işler yapmama yardımcı oldu.
+                Çalışmalarıma ürünlerim bölümünden bakabilirsiniz. </p>
+            <div class="skills">
+                <span>Web dizayn</span>
+                <span>Photoshop & Illustrator</span>
+                <span>Kodlama</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="lightbox-plus-jquery.js"> </script>
+</body>
+
+</html>
